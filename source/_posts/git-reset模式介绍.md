@@ -1,7 +1,8 @@
 ---
 title: git reset模式介绍
 date: 2016-04-05 17:45:17
-tags:
+tags: 
+- git
 ---
 
 ## 先看命令帮助的讲解
