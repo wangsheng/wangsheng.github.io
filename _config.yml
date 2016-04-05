@@ -70,4 +70,4 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:wangsheng/wangsheng.github.io.git
-  branch: blog
+  branch: master
