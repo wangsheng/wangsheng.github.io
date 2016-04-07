@@ -12,7 +12,7 @@ tags:
 
 ### 创建个人主页
 
-GitHub 为每一个用户分配了一个二级域名<username>.github.io，用户为自己的二级域名创建主页很容易，只要在个人托管空间下创建一个名为<username>.github.io的版本库，向其master分支提交网站静态页面即可，其中网站首页为index.html。
+GitHub 为每一个用户分配了一个二级域名 $username.github.io，用户为自己的二级域名创建主页很容易，只要在个人托管空间下创建一个名为 $username.github.io的版本库，向其master分支提交网站静态页面即可，其中网站首页为index.html。
 
 1. 创建个人主页版本库
 
