@@ -109,7 +109,7 @@ $ hexo server                # 生成静态文件, 启动本地web服务器
   $ git remote add origin https://github.com/$username/$username.github.io.git # 添加远程源
   ```
 
-  关于如何建立github个人主页版本库，看参见上一篇博客 ![Github创建个人主页](http://wangsheng.github.io/2016/04/06/Github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/)
+  关于如何建立github个人主页版本库，看参见上一篇博客 [Github创建个人主页](http://wangsheng.github.io/2016/04/06/Github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/)
 
 1. 部署到Github上
 
