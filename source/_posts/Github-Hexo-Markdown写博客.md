@@ -78,7 +78,7 @@ $ hexo server                # 生成静态文件, 启动本地web服务器
   ## Docs: https://hexo.io/docs/deployment.html
   deploy:
     type: git
-    repo: https://github.com/hllcme/hllcme.github.io.git
+    repo: https://github.com/$username/$username.github.io.git
     branch: master
   ```
 1. 添加Git部署所依赖的库 hexo-deployer-git
