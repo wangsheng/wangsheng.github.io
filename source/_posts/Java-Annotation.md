@@ -10,11 +10,11 @@ tags:
 
 维基百科: A form of syntactic metadaa that can be added to Java source code. 也就是说，Annotation的引入是为了从Java语言层面上，为Java源代码提供元数据的支持。[参见维基百科](http://en.wikipedia.org/wiki/Java_annotation)
 
-### Annotation的用途
+## Annotation的用途
 
 表象，替代之前JDK1.4开发中，大量繁琐的配置项，Annotation的出现其实可以极大简化配置文件的数量和需要关注配置的内容。但其实，注解带来的益处远不至于此。
 
-### Annotation的分类
+## Annotation的分类
 
 - 文档标注型
 
