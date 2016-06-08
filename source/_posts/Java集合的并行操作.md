@@ -1,6 +1,7 @@
 ---
 title: Java集合的并行操作
 date: 2015-06-26 14:56:00
+categories: Java
 tags:
 - Java
 ---

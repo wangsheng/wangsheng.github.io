@@ -1,6 +1,7 @@
 ---
 title: Ruby on Rails 初体验
 date: 2015-11-30 18:10:14
+categories: Ruby
 tags:
 - Ruby
 - Rails

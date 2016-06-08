@@ -1,6 +1,7 @@
 ---
 title: Github+Hexo+Markdown写博客
 date: 2016-04-06 18:18:45
+categories: Git
 tags:
 - Github
 - Hexo

@@ -1,6 +1,7 @@
 ---
 title: redmine与Gitlab集成
 date: 2016-01-22 13:43:04
+categories: 项目管理
 tags:
 - Redmine
 - Gitlab

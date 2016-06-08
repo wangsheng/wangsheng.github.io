@@ -1,6 +1,7 @@
 ---
 title: Github+Hexo+travis进阶
 date: 2016-04-11 18:26:11
+categories: Git
 tags:
 - Github
 - Hexo

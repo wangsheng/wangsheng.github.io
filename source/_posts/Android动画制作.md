@@ -1,6 +1,7 @@
 ---
 title: Android动画制作
 date: 2015-07-07 18:27:22
+categories: Android
 tags:
 - Android
 - 动画

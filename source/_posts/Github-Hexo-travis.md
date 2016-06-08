@@ -1,6 +1,7 @@
 ---
 title: Github+Hexo+travis
 date: 2016-04-07 15:26:11
+categories: Git
 tags:
 - Github
 - Hexo

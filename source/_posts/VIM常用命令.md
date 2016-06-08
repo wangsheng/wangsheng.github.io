@@ -1,6 +1,7 @@
 ---
 title: VIM常用命令
 date: 2015-06-19 16:02:39
+categories: Linux
 tags:
 ---
 
