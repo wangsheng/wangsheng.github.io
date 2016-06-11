@@ -93,3 +93,9 @@ Hexo 默认的主题是[Landscape](https://hexo.io/hexo-theme-landscape/)，如�
 注意：文章里介绍的配置多说short_name指你申请时的二级域名，如你申请了http://test.duoshuo.com
 这个域名，那么你的short_name就是test
 ```
+
+## 添加RSS订阅功能
+
+看到别人的博客中都有RSS订阅功能，是不是手痒痒，也想给自己的博客搭建一个RSS订阅功能，方便别人使用RSS阅读器订阅呢？
+
+Hexo核心并没有提供RSS订阅功能，不过有一个feed插件`hexo-generator-feed`，支持此功能。具体的配置过程可参见 [Hexo—正确添加RSS订阅](http://hanhailong.com/2015/10/08/Hexo%E2%80%94%E6%AD%A3%E7%A1%AE%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85/)
