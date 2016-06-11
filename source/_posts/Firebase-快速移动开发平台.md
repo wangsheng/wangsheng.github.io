@@ -1,6 +1,7 @@
 ---
 title: Firebase-快速移动开发平台
 date: 2016-05-19 17:35:24
+toc: true
 categories: Android
 tags:
 - Firebase

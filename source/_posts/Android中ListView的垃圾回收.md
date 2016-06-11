@@ -1,6 +1,7 @@
 ---
 title: Android中ListView的垃圾回收
 date: 2015-08-07 13:45:55
+toc: true
 categories: Android
 tags:
 - Android

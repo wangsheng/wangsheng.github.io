@@ -1,6 +1,7 @@
 ---
 title: Android N requires the IDE to be running with Java 1.8 or later
 date: 2016-06-08 09:32:55
+toc: true
 categories: Android
 tags:
 - Android

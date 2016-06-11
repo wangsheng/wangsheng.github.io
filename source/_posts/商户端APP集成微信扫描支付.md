@@ -1,6 +1,7 @@
 ---
 title: 商户端APP集成微信扫描支付
 date: 2015-07-10 14:11:10
+toc: true
 categories: Android
 tags:
 - 移动支付

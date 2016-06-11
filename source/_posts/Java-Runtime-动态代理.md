@@ -1,6 +1,7 @@
 ---
 title: Java Runtime 动态代理
 date: 2016-06-01 15:20:54
+toc: true
 categories: Java
 tags:
 - Java
