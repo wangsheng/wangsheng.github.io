@@ -18,12 +18,12 @@ menu:
   - page: archive
     directory: archives/
     icon: fa-archive
-  - page: about
-    directory: about/
-    icon: fa-user
-  - page: rss
-    directory: atom.xml
-    icon: fa-rss
+#  - page: about
+#    directory: about/
+#    icon: fa-user
+#  - page: rss
+#    directory: atom.xml
+#    icon: fa-rss
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
   - search
@@ -34,12 +34,12 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - links
 
 links:
-  - title: site-name1
-    url: http://www.example1.com/
-  - title: site-name2
-    url: http://www.example2.com/
-  - title: site-name3
-    url: http://www.example3.com/
+  - title: 极客导航
+    url: http://jikedaohang.com/
+  - title: stormzhang
+    url: http://stormzhang.com/
+  - title: objc中国
+    url: http://objccn.io/
 
 timeline:
   - num: 1
