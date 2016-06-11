@@ -8,9 +8,7 @@ tags:
 - Fresco
 ---
 
-## Fresco诞生背景
-
-为提高Android中图片的加载速度，一般的图片库都采用了三级缓存：Memory Cache、Disk Cache和Network。但是，Android的系统层是将物理内存平均分配给每一个App。这样每个App所分配的空间都是有限的，早起的android设备，每个App只被分配16MB空间，这样，如果App中使用大量的图片，那么很容易因OOM而Crashes掉。Facebook App正是大量使用图片的App，面临这个问题刻不容缓，所以他们历尽艰难，开发了Fresco图片加载库。 
+『Fresco诞生背景』为提高Android中图片的加载速度，一般的图片库都采用了三级缓存：Memory Cache、Disk Cache和Network。但是，Android的系统层是将物理内存平均分配给每一个App。这样每个App所分配的空间都是有限的，早起的android设备，每个App只被分配16MB空间，这样，如果App中使用大量的图片，那么很容易因OOM而Crashes掉。Facebook App正是大量使用图片的App，面临这个问题刻不容缓，所以他们历尽艰难，开发了Fresco图片加载库。 
   
 ## Fresco诞生过程
 

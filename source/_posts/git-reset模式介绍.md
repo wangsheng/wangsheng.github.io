@@ -7,7 +7,7 @@ tags:
 - git
 ---
 
-## 先看命令帮助的讲解
+先看命令帮助的讲解
 
 ``` bash
 Victors-MPB:hello wangsheng$ git reset -h

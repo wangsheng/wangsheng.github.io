@@ -11,8 +11,6 @@ tags:
 - travis
 ---
 
-## 引入travis-ci的背景
-
 上一篇 [Github+Hexo+Markdown写博客](http://wangsheng.github.io/2016/04/06/Github-Hexo-Markdown%E5%86%99%E5%8D%9A%E5%AE%A2/)介绍了如何使用Github+Hexo搭建自己的博客，然后以Markdown方式写自己的博文。聪明的观众可能已经看出，写一篇博客，可能需要以下几步：
 
 ```

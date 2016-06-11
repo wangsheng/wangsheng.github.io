@@ -7,9 +7,7 @@ tags:
 - Android
 ---
 
-## ListView中ItemView的复用
-
-为了提高ListView的加载速度和用户操作的流畅度，ListView底层做了ItemView的复用，避免重复地为每一个ItemView开辟空间。
+『ListView中ItemView的复用』为了提高ListView的加载速度和用户操作的流畅度，ListView底层做了ItemView的复用，避免重复地为每一个ItemView开辟空间。
 
 - ActiveView
   

@@ -8,8 +8,6 @@ tags:
 - Android Studio
 ---
 
-## 背景
-
 前段时间，下载了Android N Preview预览版的SDK，同时更新了Android SDK Tools到25.1.7.rc1，Android SDK Build-tools到24 rc4。之后好好体验了一把Android N以及Android N的官方demo『关于多窗口、通知栏、ScopeDirectory的示例』爽爆了。
 
 ## 问题

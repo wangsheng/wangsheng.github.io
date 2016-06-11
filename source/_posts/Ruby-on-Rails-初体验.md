@@ -1,14 +1,13 @@
 ---
 title: Ruby on Rails 初体验
 date: 2015-11-30 18:10:14
-toc: true
 categories: Ruby
 tags:
 - Ruby
 - Rails
 ---
 
-## 使用命令行快速创建应用的步骤
+使用命令行快速创建应用的步骤
 
 - 创建应用程序
 

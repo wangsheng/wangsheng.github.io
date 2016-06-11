@@ -8,9 +8,7 @@ tags:
 - Annotation
 ---
 
-## Annotation是什么
-
-维基百科: A form of syntactic metadaa that can be added to Java source code. 也就是说，Annotation的引入是为了从Java语言层面上，为Java源代码提供元数据的支持。[参见维基百科](http://en.wikipedia.org/wiki/Java_annotation)
+Annotation是什么？维基百科: A form of syntactic metadaa that can be added to Java source code. 也就是说，Annotation的引入是为了从Java语言层面上，为Java源代码提供元数据的支持。[参见维基百科](http://en.wikipedia.org/wiki/Java_annotation)
 
 ## Annotation的用途
 
