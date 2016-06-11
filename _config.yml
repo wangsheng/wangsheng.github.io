@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 生活不止眼前的苟且，还有诗和远方的田野
-subtitle:
+title: Victor
+subtitle: 生活不止眼前的苟且，还有诗和远方的田野
 description:
 author: Wang Sheng
 language:
@@ -63,7 +63,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+#theme: landscape
+theme: maupassant
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
