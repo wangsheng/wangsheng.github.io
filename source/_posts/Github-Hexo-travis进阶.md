@@ -1,6 +1,7 @@
 ---
 title: Github+Hexo+travis进阶
 date: 2016-04-11 18:26:11
+toc: true
 categories: Git
 tags:
 - Github
@@ -81,3 +82,14 @@ Hexo 默认的主题是[Landscape](https://hexo.io/hexo-theme-landscape/)，如�
   $ git commit -m "use clean-blog theme"
   $ git push origin blog
   ```
+
+## 添加评论功能
+
+有人说，这样的静态的网站没有评论功能，不能跟读者互动多无聊呀。不过，不用担心，市场上有第三方的评论系统，可以直接以插件的方式接入。
+
+下面介绍 [多说](http://duoshuo.com/)，具体的操作步骤参见 [Hexo使用多说教程](http://dev.duoshuo.com/threads/541d3b2b40b5abcd2e4df0e9)
+
+```
+注意：文章里介绍的配置多说short_name指你申请时的二级域名，如你申请了http://test.duoshuo.com
+这个域名，那么你的short_name就是test
+```
