@@ -9,6 +9,7 @@ tags:
 - Markdown
 - 博客
 - travis
+- git
 ---
 
 上一篇 [Github+Hexo+travis](http://wangsheng.github.io/2016/04/07/Github-Hexo-travis/)如何使用travis-ci自动构建静态博客。自由创客已经可以自由写作了，但是有些文艺青年觉得：
