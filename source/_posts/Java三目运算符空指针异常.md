@@ -15,31 +15,25 @@ public class Hello {
     public static void main(String[] args) {
         Bar bar = new Bar();
         Foo foo = new Foo();
-        foo.setOffer_speed(bar == null ? 0 : bar.getWeek());
+        foo.setFoo(bar == null ? 0 : bar.getBar());
     }
 }
-
 class Foo {
-    private Integer offer_speed;
-
-    public Integer getOffer_speed() {
-        return offer_speed;
+    private Integer foo;
+    public Integer getFoo() {
+        return foo;
     }
-
-    public void setOffer_speed(Integer offer_speed) {
-        this.offer_speed = offer_speed;
+    public void setFoo(Integer foo) {
+        this.foo = foo;
     }
 }
-
 class Bar {
-    private Integer week;
-
-    public Integer getWeek() {
-        return week;
+    private Integer bar;
+    public Integer getBar() {
+        return bar;
     }
-
-    public void setWeek(Integer week) {
-        this.week = week;
+    public void setBar(Integer bar) {
+        this.bar = bar;
     }
 }
 ~~~
@@ -50,9 +44,9 @@ class Bar {
 
 ~~~Java
 if (bar == null) {
-    foo.setOffer_speed(0);
+    foo.setFoo(0);
 } else {
-    foo.setOffer_speed(bar.getWeek());
+    foo.setFoo(bar.getBar());
 }
 ~~~
 
@@ -63,7 +57,7 @@ if (bar == null) {
 因此，这个bug的另外一个解决方案，就是不用拆成if-else，而是把第二位和第三位都变成对象类型就行：
 
 ~~~Java
-foo.setOffer_speed(bar == null ? Integer.valueOf(0) : bar.getWeek());
+foo.setFoo(bar == null ? Integer.valueOf(0) : bar.getBar());
 ~~~
 
 
