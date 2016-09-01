@@ -36,6 +36,8 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
 links:
   - title: 极客导航
     url: http://jikedaohang.com/
+  - title: 后端技术杂谈
+    url: http://www.rowkey.me/
   - title: stormzhang
     url: http://stormzhang.com/
   - title: objc中国
