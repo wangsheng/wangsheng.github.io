@@ -5,6 +5,8 @@ node_js:
 
 before_install:
 - npm install hexo -g
+- npm install hexo-generator-sitemap --save
+- npm install hexo-generator-baidu-sitemap --save
 
 # Decrypt the private key
 - openssl aes-256-cbc -K $encrypted_112712e457d2_key -iv $encrypted_112712e457d2_iv -in .travis/gt_blog_id_rsa.enc -out ~/.ssh/gt_blog_id_rsa -d
