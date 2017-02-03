@@ -77,6 +77,9 @@ theme: maupassant
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo: git@github.com:wangsheng/wangsheng.github.io.git
+  branch: master
+- type: git
+  repo: git@git.coding.net:victor87/victor87.coding.me.git
   branch: master
