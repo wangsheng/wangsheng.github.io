@@ -100,3 +100,7 @@ Hexo 默认的主题是[Landscape](https://hexo.io/hexo-theme-landscape/)，如�
 看到别人的博客中都有RSS订阅功能，是不是手痒痒，也想给自己的博客搭建一个RSS订阅功能，方便别人使用RSS阅读器订阅呢？
 
 Hexo核心并没有提供RSS订阅功能，不过有一个feed插件`hexo-generator-feed`，支持此功能。具体的配置过程可参见 [Hexo—正确添加RSS订阅](http://hanhailong.com/2015/10/08/Hexo%E2%80%94%E6%AD%A3%E7%A1%AE%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85/)
+
+## 搜索引擎优化
+
+[如何让谷歌搜索到自己在GitHub上的博客](http://www.jianshu.com/p/df46bca5889d)
