@@ -1,7 +1,7 @@
 ---
 title: Swoole安装
 date: 2017-02-22 16:01:21
-categories: 大数据
+categories: PHP
 tags:
 - Swoole
 - PHP
