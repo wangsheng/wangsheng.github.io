@@ -27,7 +27,7 @@ MongoDB 是一个介于关系数据库和非关系数据库之间的产品，是
 启动MongoDB服务
 
 ~~~shell
-$ mongod --dbpath /path/to/mongodb
+$ mongod --dbpath=/path/to/mongodb
 ~~~
 
 --dbpath 可选参数，如果不填写，则默认数据库文件路径为 `/data/db`

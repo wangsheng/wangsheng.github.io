@@ -22,7 +22,7 @@ $ ./configure
 $ sudo make install
 ~~~
 
-注意，如果你是采用git clone的方式下载MongoDB PHP Driver, 则需要执行子模块clone下载。因为，这个驱动版本空用到了git的submodule.
+注意，如果你是采用git clone的方式下载MongoDB PHP Driver, 则需要执行子模块clone下载。因为，这个驱动版本库用到了git的submodule.
 
 ~~~Shell
 git submodule update --init
