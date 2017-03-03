@@ -25,19 +25,19 @@ Successfully added user: {
 ## 开启权限认证
 
 ~~~Shell
-$ echo "auth=true" >> /path/to/mongodb/bin/mongodb.conf
+$ echo "auth=true" >> /path/to/mongodb.conf
 ~~~
 
 重启MongoDB服务
 
 ~~~Shell
-$ mongod --config=/path/to/mongodb/bin/mongodb.conf
+$ mongod --config=/path/to/mongodb.conf
 ~~~
 
 ### 后台运行MongoDB
 
 ~~~Shell
-$ mongod --config=/path/to/mongodb/bin/mongodb.conf --fork --logpath=/path/to/logfile
+$ mongod --config=/path/to/mongodb.conf --fork --logpath=/path/to/logfile
 ~~~
 
 **注意:** `--fork`后台运行时，必须制定日志文件路径

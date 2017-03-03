@@ -97,20 +97,11 @@ stdClass Object
 
 ~~~PHP
 <?php
-
-// 创建MongoDB的驱动管理对象
+$bulk = new MongoDB\Driver\BulkWrite;
+$bulk->update(['title' => 'Hello'], ['$set' => ['content' => '你好，世界!']]);
 $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
-
-// 查询数据
-$filter = [];
-$options = [];
-$query = new MongoDB\Driver\Query($filter, $options);
-$cursor = $manager->executeQuery('test.message', $query);
-
-foreach ($cursor as $document) {
-    print_r($document);
-}
-
+$writeConcern = new MongoDB\Driver\WriteConcern(MongoDB\Driver\WriteConcern::MAJORITY, 1000);
+$result = $manager->executeBulkWrite('test.message', $bulk, $writeConcern);
 ?>
 ~~~
 
