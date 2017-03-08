@@ -12,7 +12,15 @@ tags:
 
 ## 安装PHP MongoDB驱动
 
+- 最新源码下载地址
+
 访问 [MongoDB PHP Driver](https://github.com/mongodb/mongo-php-driver), 下载源码。
+
+- 稳定官方下载地址
+
+访问 [https://pecl.php.net/package/mongodb](https://pecl.php.net/package/mongodb), 下载源码。
+
+不喜欢当小白鼠的，请选择稳定的官方地址
 
 ~~~Shell
 $ tar zxvf mongodb-mongodb-php-driver-<commit_id>.tar.gz
