@@ -42,6 +42,13 @@ $ mongod --config=/path/to/mongodb.conf --fork --logpath=/path/to/logfile
 
 **注意:** `--fork`后台运行时，必须制定日志文件路径
 
+### 开启IPv6
+
+~~~Shell
+$ mongod --config=/path/to/mongodb.conf --fork --logpath=/path/to/logfile --filePermissions 0777 --ipv6
+~~~
+
+
 ## mongo shell客户端连接
 
 ~~~Shell
