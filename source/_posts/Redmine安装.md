@@ -10,7 +10,13 @@ tags:
 
 [Redmine](http://www.redmine.org)是一个开源的、基于Web的项目管理和缺陷跟踪工具。它用日历和甘特图辅助项目及进度可视化显示。同时它又支持多项目管理。Redmine是一个自由开放 源码软件解决方案，它提供集成的项目管理功能，问题跟踪，并为多个版本控制选项的支持。虽说像IBM Rational Team Concert的商业项目调查工具已经很强大了，但想坚持一个自由和开放源码的解决方案，可能会发现Redmine是一个有用的Scrum和敏捷的选择。 由于Redmine的设计受到Rrac的较大影响，所以它们的软件包有很多相似的特征。Redmine建立在Ruby on Rails的框架之上，他可以夸平台和数据库。
 
-## 数据库准备工作
+## 准备工作
+
+### Ruby
+
+推荐使用rvm安装ruby，具体安装教程，参见[centos下rvm安装](http://blog.csdn.net/yangcs2009/article/details/50634424)
+
+### 数据库
 
 ~~~SQL
 CREATE DATABASE redmine CHARACTER SET utf8;
