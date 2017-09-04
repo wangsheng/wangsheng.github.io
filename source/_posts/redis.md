@@ -33,6 +33,20 @@ yum install redis
 redis-server
 ~~~
 
+### 后台启动
+
+- 编辑 redis.conf文件，修改daemonize为yes
+
+~~~
+daemonize yes
+~~~
+
+- 启动
+
+~~~Shell
+redis-server /path/to/redis.conf
+~~~
+
 ## 检测redis是否启动成功
 
 ~~~Shell
