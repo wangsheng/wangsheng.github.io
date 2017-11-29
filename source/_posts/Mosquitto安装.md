@@ -85,7 +85,7 @@ password_file /etc/mosquitto/pwfile
 (3) 重启mosquitto
 
 ~~~Shell
-$ systemctl start mosquitto
+$ systemctl restart mosquitto
 ~~~
 
 这时候如果要测试发布和订阅，就需要设置用户名和密码了
