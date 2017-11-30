@@ -14,11 +14,19 @@ tags:
 
 以Centos7.x为例
 
+### 如果你服务器源里是 1.4.13 版本的 Mosquitto
+
 ~~~Shell
-$ yum install epel-release #如果已经安装这个的可以忽略
 $ yum install mosquitto
-$ systemctl start mosquitto
 ~~~
+
+### 如果你服务器源里是 1.4.14 版本的 Mosquitto
+
+~~~Shell
+$ yum install mosquitto mosquitto-clients
+~~~
+
+> [含有Mosquitto-v1.4.14版本的源](http://download.opensuse.org/repositories/home:/oojah:/mqtt/CentOS_CentOS-7/home:oojah:mqtt.repo)
 
 Mac用户可以通过Homebrew安装
 
