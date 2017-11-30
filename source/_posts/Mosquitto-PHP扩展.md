@@ -122,4 +122,5 @@ echo "Finished\n";
 $client->setCredentials('test', '123456');
 ~~~
 
+更多Mosquitto-PHP用法，参见 [Mosquitto-PHP-docs](https://mosquitto-php.readthedocs.io/en/latest/)
 
