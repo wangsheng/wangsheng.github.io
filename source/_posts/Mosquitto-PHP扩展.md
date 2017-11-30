@@ -7,6 +7,7 @@ tags:
 - Mosquitto
 - 物联网
 - PHP
+- 消息队列
 ---
 
 上篇[Mosquitto安装](http://victor87.coding.me/2017/11/29/Mosquitto%E5%AE%89%E8%A3%85/)介绍了如何安装以及命令行使用Mosquitto，那么PHP里如何调用Mosquitto呢？这篇文章将介绍PHP与Mosquitto的集成。
