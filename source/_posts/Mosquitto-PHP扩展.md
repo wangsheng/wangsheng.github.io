@@ -1,11 +1,11 @@
 ---
 title: Mosquitto PHP扩展
 date: 2017-11-30 11:57:51
-categories: 大数据 & AI
+categories: IoT
 tags:
 - MQTT
 - Mosquitto
-- 物联网
+- 物联网(IoT)
 - PHP
 - 消息队列
 ---
