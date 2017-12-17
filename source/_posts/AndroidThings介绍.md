@@ -8,7 +8,6 @@ tags:
 ---
 
 PC、智能手机时代已过去，接下来进入的是一个万物联网的时代，即物联网时代。
-
 ![IoT增长](http://img4.iyiou.com/Editor/image/20161012/1476262106932494.jpg)
 
 从图中不难看出物联网的量级要远远超过之前的PC和智能手机数量。因此 [Google](https://google.com)自然不甘错失机会，推出了 [Android Things](https://developer.android.com/things/get-started/index.html)。
