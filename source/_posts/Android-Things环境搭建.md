@@ -13,14 +13,14 @@ tags:
 
 ## 所含套件
 
-- 1. Pico i.MX7 双核开发板
-- 4. USB-C线
-- 5. Wifi天线
-- 6. 天线延长线
-- 7. 摄像头
-- 8. 摄像头视频线
-- 9. 5寸多点触控显示屏
-- 10. 显示屏6线电缆
+- ① Pico i.MX7 双核开发板
+- ④ USB-C线
+- ⑤ Wifi天线
+- ⑥ 天线延长线
+- ⑦ 摄像头
+- ⑧ 摄像头视频线
+- ⑨ 5寸多点触控显示屏
+- ⑩ 显示屏6线电缆
 
 ![components](https://developer.android.com/things/images/imx7d-kit/inventory.jpg)
 
