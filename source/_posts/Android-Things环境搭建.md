@@ -8,8 +8,7 @@ tags:
 - NXP i.MX7D
 ---
 
-本例子中，以Pico Pro Maker Kit(不包含彩虹帽Rainbow HAT)介绍。
-
+本教程中，以Pico Pro Maker Kit(不包含彩虹帽Rainbow HAT)为例介绍。
 ![Pico Pro Maker Kit](http://7xsk2b.com1.z0.glb.clouddn.com/image/Pico%20Pro.jpeg)
 
 ## 所含套件

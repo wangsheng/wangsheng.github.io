@@ -52,7 +52,7 @@ Android Things控制台提供了安装和更新系统镜像的工具，供你开
 
 了解更多特性，可访问 [Console document](https://developer.android.com/things/console/index.html)
 
-想上手把玩下Android Things，可访问 [Android Things环境搭建](http://victor87.coding.me/2017/12/16/Android Things环境搭建/)
+想上手把玩下Android Things，可访问 [Android Things环境搭建](http://victor87.coding.me/2017/12/17/Android-Things%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/)
 
 
 
