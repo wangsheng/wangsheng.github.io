@@ -5,7 +5,7 @@ categories: IoT
 tags:
 - MQTT
 - Mosquitto
-- 物联网(IoT)
+- 物联网
 - 消息队列
 ---
 
