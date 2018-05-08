@@ -4,6 +4,7 @@ date: 2015-06-19 16:02:39
 toc: true
 categories: Linux
 tags:
+- Linux
 ---
 
 ## 光标移动

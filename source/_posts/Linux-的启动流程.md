@@ -3,6 +3,7 @@ title: Linux 的启动流程
 date: 2017-11-26 15:58:39
 categories: Linux
 tags: 
+- Linux
 - 计算机基础
 - 启动流程
 ---
