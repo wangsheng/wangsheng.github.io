@@ -3,6 +3,7 @@ title: Linux 守护进程的启动方法
 date: 2017-11-26 16:43:05
 categories: Linux
 tags: 
+- Linux
 - 计算机基础
 - 守护进程
 ---
