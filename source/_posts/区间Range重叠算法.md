@@ -261,36 +261,35 @@ class Range
      * 是否包含交集部分
      *
      * @param Range $other 另一个被比较的交集对象
-     * @param float $intersectionInterval 交集的间隔区域，默认为0.0，代表不需要缓冲间隔
      * @return bool true-含有交集; false-不含交集
      */
-    public function hasIntersection(Range $other, float $intersectionInterval = 0.0)
+    public function hasIntersection(Range $other)
     {
         if ($this->start->isNegativeInfinityPoint() && $this->end->isPositiveInfinityPoint()) {
             // 因为当前对象是负无穷到正无穷，所以不论other什么取值，总是会有交集的
             return true;
         } else if ($this->start->isNegativeInfinityPoint()) {
             // 当前对象左侧到负无穷，右侧有限。这种情况，只有other在右侧才有可能没有交集
-            if ($other->start->value - $intersectionInterval == $this->end->value) {
+            if ($other->start->value == $this->end->value) {
                 if ($other->start->includeSelf && $this->end->includeSelf) {
                     return true;
                 } else {
                     return false;
                 }
-            } else if ($other->start->value - $intersectionInterval > $this->end->value) {
+            } else if ($other->start->value > $this->end->value) {
                 return false;
             } else {
                 return true;
             }
         } else if ($this->end->isPositiveInfinityPoint()) {
             // 当前对象右侧到正无穷，左侧有限。这种情况，只有other在左侧，才有可能没有交集
-            if ($other->end->value + $intersectionInterval == $this->start->value) {
+            if ($other->end->value == $this->start->value) {
                 if ($other->end->includeSelf && $this->start->includeSelf) {
                     return true;
                 } else {
                     return false;
                 }
-            } else if ($other->end->value + $intersectionInterval < $this->start->value) {
+            } else if ($other->end->value < $this->start->value) {
                 return false;
             } else {
                 return true;
@@ -302,28 +301,28 @@ class Range
                 return true;
             } else if ($other->start->isNegativeInfinityPoint()) {
                 // other对象左侧到负无穷，右侧有限。
-                if ($other->end->value + $intersectionInterval == $this->start->value) {
+                if ($other->end->value == $this->start->value) {
                     // 判断实心点还是虚心点
                     if ($other->end->includeSelf && $this->start->includeSelf) {
                         return true;
                     } else {
                         return false;
                     }
-                } else if($other->end->value + $intersectionInterval < $this->start->value) {
+                } else if($other->end->value < $this->start->value) {
                     return false;
                 } else {
                     return true;
                 }
             } else if ($other->end->isPositiveInfinityPoint()) {
                 // other对象右侧正无穷，左侧有限
-                if ($other->start->value - $intersectionInterval == $this->end->value) {
+                if ($other->start->value == $this->end->value) {
                     // 判断实心点还是虚心点
                     if ($other->start->includeSelf && $this->end->includeSelf) {
                         return true;
                     } else {
                         return false;
                     }
-                } else if ($other->start->value - $intersectionInterval > $this->end->value) {
+                } else if ($other->start->value > $this->end->value) {
                     return false;
                 } else {
                     return true;
@@ -332,24 +331,24 @@ class Range
                 // other对象是一个有限区间
 
                 // other对象的区间在this对象区间的左侧，才有可能没有交集
-                if ($other->end->value + $intersectionInterval == $this->start->value) {
+                if ($other->end->value == $this->start->value) {
                     if ($other->end->includeSelf && $this->start->includeSelf) {
                         return true;
                     } else {
                         return false;
                     }
-                } else if ($other->end->value + $intersectionInterval < $this->start->value) {
+                } else if ($other->end->value < $this->start->value) {
                     return false;
                 }
 
                 // other对象的区间在this对象区间的右侧，才有可能没有交集
-                if ($other->start->value - $intersectionInterval == $this->end->value) {
+                if ($other->start->value == $this->end->value) {
                     if ($other->start->includeSelf && $this->end->includeSelf) {
                         return true;
                     } else {
                         return false;
                     }
-                } elseif ($other->start->value - $intersectionInterval > $this->end->value) {
+                } elseif ($other->start->value > $this->end->value) {
                     return false;
                 }
 
