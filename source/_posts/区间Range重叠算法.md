@@ -270,7 +270,9 @@ class Range
             return true;
         } else if ($this->start->isNegativeInfinityPoint()) {
             // 当前对象左侧到负无穷，右侧有限。这种情况，只有other在右侧才有可能没有交集
-            if ($other->start->value == $this->end->value) {
+            if ($other->start->isNegativeInfinityPoint()) {
+                return true;
+            } else if ($other->start->value == $this->end->value) {
                 if ($other->start->includeSelf && $this->end->includeSelf) {
                     return true;
                 } else {
@@ -283,7 +285,9 @@ class Range
             }
         } else if ($this->end->isPositiveInfinityPoint()) {
             // 当前对象右侧到正无穷，左侧有限。这种情况，只有other在左侧，才有可能没有交集
-            if ($other->end->value == $this->start->value) {
+            if ($other->end->isPositiveInfinityPoint()) {
+                return true;
+            } else if ($other->end->value == $this->start->value) {
                 if ($other->end->includeSelf && $this->start->includeSelf) {
                     return true;
                 } else {
