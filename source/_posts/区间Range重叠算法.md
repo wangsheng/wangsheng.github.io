@@ -129,7 +129,7 @@ class Point
      * @return bool
      */
     public function isNegativeInfinityPoint() {
-        return $this->value == self::NEGATIVE_INFINITY;
+        return $this->value === self::NEGATIVE_INFINITY;
     }
 
     /**
@@ -138,7 +138,7 @@ class Point
      * @return bool
      */
     public function isPositiveInfinityPoint() {
-        return $this->value == self::POSITIVE_INFINITY;
+        return $this->value === self::POSITIVE_INFINITY;
     }
 }
 ~~~
