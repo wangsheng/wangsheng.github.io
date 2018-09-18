@@ -10,7 +10,7 @@ tags:
 MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。
 MongoDB 是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。
 
-![mongodb-vs-mysql](http://7xsk2b.com1.z0.glb.clouddn.com/image/mongodb-vs-mysql.png)
+![mongodb-vs-mysql](http://img.iaquam.com/image/mongodb-vs-mysql.png)
 ![Mapping-Table-to-Collection](http://www.runoob.com/wp-content/uploads/2013/10/Figure-1-Mapping-Table-to-Collection-1.png)
 
 ## 安装

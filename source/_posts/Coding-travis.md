@@ -62,7 +62,7 @@ deploy:
 
 ## 将这些配置信息入库，提交，并push到github上，从而触发travis自动构建和部署
 
-![travis-join-coding1](http://7xsk2b.com1.z0.glb.clouddn.com/image/travis-join-coding1.png)
+![travis-join-coding1](http://img.iaquam.com/image/travis-join-coding1.png)
 
 红色框中说明，travis已自动将静态博客内容同时部署到了github和coding上了。
 
@@ -70,11 +70,11 @@ deploy:
 
 这时登录coding，访问{user_name}.coding.me，可以看到博客内容已经入库了。然后就选择源，部署pages服务。
 
-![travis-join-coding2](http://7xsk2b.com1.z0.glb.clouddn.com/image/travis-join-coding2.png)
-![travis-join-coding3](http://7xsk2b.com1.z0.glb.clouddn.com/image/travis-join-coding3.png)
-![travis-join-coding4](http://7xsk2b.com1.z0.glb.clouddn.com/image/travis-join-coding4.png)
+![travis-join-coding2](http://img.iaquam.com/image/travis-join-coding2.png)
+![travis-join-coding3](http://img.iaquam.com/image/travis-join-coding3.png)
+![travis-join-coding4](http://img.iaquam.com/image/travis-join-coding4.png)
 
 看效果
 
-![travis-join-coding5](http://7xsk2b.com1.z0.glb.clouddn.com/image/travis-join-coding5.png)
-![travis-join-coding6](http://7xsk2b.com1.z0.glb.clouddn.com/image/travis-join-coding6.png)
+![travis-join-coding5](http://img.iaquam.com/image/travis-join-coding5.png)
+![travis-join-coding6](http://img.iaquam.com/image/travis-join-coding6.png)

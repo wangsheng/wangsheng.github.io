@@ -9,7 +9,7 @@ tags:
 ---
 
 本教程中，以Pico Pro Maker Kit(不包含彩虹帽Rainbow HAT)为例介绍。
-![Pico Pro Maker Kit](http://7xsk2b.com1.z0.glb.clouddn.com/image/Pico%20Pro.jpeg)
+![Pico Pro Maker Kit](http://img.iaquam.com/image/Pico%20Pro.jpeg)
 
 ## 所含套件
 
@@ -60,7 +60,7 @@ tags:
 
 ### 最终谍照
 
-![final result](http://7xsk2b.com1.z0.glb.clouddn.com/image/Pico%20Pro%20connected.jpeg)
+![final result](http://img.iaquam.com/image/Pico%20Pro%20connected.jpeg)
 
 如果你的开发板包含彩虹帽，可参考[官方连接教程](https://developer.android.com/things/hardware/imx7d-kit.html#connect_the_parts)
 
@@ -169,13 +169,13 @@ Would you like to set up Wi-Fi on this device? (y/n)
 
 ## 效果图
 
-![Android Things run1](http://7xsk2b.com1.z0.glb.clouddn.com/image/Android%20Things%20UI1.jpeg)
-![Android Things run2](http://7xsk2b.com1.z0.glb.clouddn.com/image/Android%20Things%20UI2.jpeg)
-![Android Things run3](http://7xsk2b.com1.z0.glb.clouddn.com/image/Android%20Things%20UI3.jpeg)
-![Android Things run4](http://7xsk2b.com1.z0.glb.clouddn.com/image/Android%20Things%20UI4.jpeg)
-![Android Things run5](http://7xsk2b.com1.z0.glb.clouddn.com/image/Android%20Things%20UI5.jpeg)
-![Android Things run6](http://7xsk2b.com1.z0.glb.clouddn.com/image/Android%20Things%20UI6.jpeg)
-![Android Things run7](http://7xsk2b.com1.z0.glb.clouddn.com/image/Android%20Things%20UI7.jpeg)
-![Android Things run8](http://7xsk2b.com1.z0.glb.clouddn.com/image/Android%20Things%20UI8.jpeg)
+![Android Things run1](http://img.iaquam.com/image/Android%20Things%20UI1.jpeg)
+![Android Things run2](http://img.iaquam.com/image/Android%20Things%20UI2.jpeg)
+![Android Things run3](http://img.iaquam.com/image/Android%20Things%20UI3.jpeg)
+![Android Things run4](http://img.iaquam.com/image/Android%20Things%20UI4.jpeg)
+![Android Things run5](http://img.iaquam.com/image/Android%20Things%20UI5.jpeg)
+![Android Things run6](http://img.iaquam.com/image/Android%20Things%20UI6.jpeg)
+![Android Things run7](http://img.iaquam.com/image/Android%20Things%20UI7.jpeg)
+![Android Things run8](http://img.iaquam.com/image/Android%20Things%20UI8.jpeg)
 
 

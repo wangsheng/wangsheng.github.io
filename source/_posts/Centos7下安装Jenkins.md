@@ -87,23 +87,23 @@ nohup java -jar /usr/lib/jenkins/jenkins.war --httpPort=8081 &
 
 初次打开jenkins界面，系统会自动生成一个管理员密码(默认会写入/root/.jenkins/secrets/initialAdminPassword这个文件里)。找到这个文件，打开并copy密码，粘贴到输入框，点击 **Continue** 就能完成初次安全校验，进入管理系统了。
 
-![初次打开](http://7xsk2b.com1.z0.glb.clouddn.com/image/jenkins-1.png)
+![初次打开](http://img.iaquam.com/image/jenkins-1.png)
 
 ## 初始化配置
 
 ### 1. 选择安装社区推荐的插件
 
-![选择插件](http://7xsk2b.com1.z0.glb.clouddn.com/image/jenkins-2.png)
+![选择插件](http://img.iaquam.com/image/jenkins-2.png)
 
-![安装](http://7xsk2b.com1.z0.glb.clouddn.com/image/jenkins-3.png)
+![安装](http://img.iaquam.com/image/jenkins-3.png)
 
 ### 2. 创建首个管理员账号
 
-![创建管理员](http://7xsk2b.com1.z0.glb.clouddn.com/image/jenkins-4.png)
+![创建管理员](http://img.iaquam.com/image/jenkins-4.png)
 
 ### 3. 点击 **Save and Finish**，完成初始化配置
 
-![完成初始化](http://7xsk2b.com1.z0.glb.clouddn.com/image/jenkins-5.png)
+![完成初始化](http://img.iaquam.com/image/jenkins-5.png)
 
-![进入首页](http://7xsk2b.com1.z0.glb.clouddn.com/image/jenkins-6.png)
+![进入首页](http://img.iaquam.com/image/jenkins-6.png)
 

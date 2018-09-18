@@ -32,7 +32,7 @@ Docker is the world’s leading software containerization platform.
 
 ## Docker架构
 
-![docker-workflow](http://7xsk2b.com1.z0.glb.clouddn.com/image/jpg/docker-architecture.jpg)
+![docker-workflow](http://img.iaquam.com/image/jpg/docker-architecture.jpg)
 
 Docker 使用客户端-服务器 (C/S) 架构模式，使用远程API来管理和创建Docker容器。Docker 容器通过 Docker 镜像来创建。容器与镜像的关系类似于面向对象编程中的对象与类。
 

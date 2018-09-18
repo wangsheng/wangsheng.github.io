@@ -80,12 +80,12 @@ Firebase的核心功能是Firebases分析，一个免费且没有限制的分析
 ### 创建Firebase项目
 
 - 访问 [控制台](https://console.firebase.google.com/)，创建一个Firebase项目。
-![firebase-create-projec](http://7xsk2b.com1.z0.glb.clouddn.com/image/firebase-create-project.png)
+![firebase-create-projec](http://img.iaquam.com/image/firebase-create-project.png)
 - 添加Firebase到应用程序
 选择项目 -> 项目设置 -> 将Firebase添加到您的Android/iOS/网页应用，按照向导一步一步完成配置。
-![firebase-console-dashboard](http://7xsk2b.com1.z0.glb.clouddn.com/image/firebase-console-dashboard.png)
-![firebase-add-to-app](http://7xsk2b.com1.z0.glb.clouddn.com/image/firebase-add-to-app.png)
+![firebase-console-dashboard](http://img.iaquam.com/image/firebase-console-dashboard.png)
+![firebase-add-to-app](http://img.iaquam.com/image/firebase-add-to-app.png)
 - 选择需要的功能模块，加入项目中
-![firebase-feature-libs-list](http://7xsk2b.com1.z0.glb.clouddn.com/image/firebase-feature-libs-list.png)
+![firebase-feature-libs-list](http://img.iaquam.com/image/firebase-feature-libs-list.png)
 
 具体的开发文档，[参见官网](https://firebase.google.com/docs)

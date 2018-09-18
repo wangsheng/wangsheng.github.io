@@ -51,5 +51,5 @@ $tableOptions = 'CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci ENGINE=InnoDB'
 ~~~
 
 经过上面的设置，重启MySQL后，就能顺利实现插入带Emoji表情的内容了。附一个效果图:
-![mysql-emoji-utf8mb4](http://7xsk2b.com1.z0.glb.clouddn.com/image/mysql-emoji-utf8mb4.png)
+![mysql-emoji-utf8mb4](http://img.iaquam.com/image/mysql-emoji-utf8mb4.png)
 

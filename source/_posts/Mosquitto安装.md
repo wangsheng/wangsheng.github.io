@@ -64,18 +64,18 @@ $ mosquitto_pub -t topic_test -m "Hello World."
 这里介绍一款Chrome插件 `MQTTBox`
 
 ### 配置如下
-![MQTTBox-setting](http://7xsk2b.com1.z0.glb.clouddn.com/image/mqttbox_setting.png)
+![MQTTBox-setting](http://img.iaquam.com/image/mqttbox_setting.png)
 
 ### 使用
 
 添加一个订阅者
-![add-subscriber](http://7xsk2b.com1.z0.glb.clouddn.com/image/add_subscriber.png)
+![add-subscriber](http://img.iaquam.com/image/add_subscriber.png)
 
 添加一个发布者
-![add-publisher](http://7xsk2b.com1.z0.glb.clouddn.com/image/add_publisher.png)
+![add-publisher](http://img.iaquam.com/image/add_publisher.png)
 
 点击发布
-![publish](http://7xsk2b.com1.z0.glb.clouddn.com/image/mqttbox_publish.png)
+![publish](http://img.iaquam.com/image/mqttbox_publish.png)
 
 ## 用户名密码认证
 
@@ -101,6 +101,6 @@ $ systemctl restart mosquitto
 ~~~
 
 这时候如果要测试发布和订阅，就需要设置用户名和密码了
-![MQTTBox-setting-login](http://7xsk2b.com1.z0.glb.clouddn.com/image/mqttbox_setting_login.png)
+![MQTTBox-setting-login](http://img.iaquam.com/image/mqttbox_setting_login.png)
 
 

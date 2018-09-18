@@ -20,7 +20,7 @@ R的源代码可自由下载使用，亦有已编译的可执行文件版本可�
 
 访问[RStudio官网](https://www.rstudio.com/)，下载对应的发型版本安装即可。
 
-![RStudio](http://7xsk2b.com1.z0.glb.clouddn.com/image/RStudio.png)
+![RStudio](http://img.iaquam.com/image/RStudio.png)
 
 ## R简单使用
 
@@ -117,7 +117,7 @@ R的源代码可自由下载使用，亦有已编译的可执行文件版本可�
 > barplot(c('男生'=10, '女生'=7), main='男女生人数', family='宋体')
 ~~~
 
-![barplot](http://7xsk2b.com1.z0.glb.clouddn.com/image/barplot.png)
+![barplot](http://img.iaquam.com/image/barplot.png)
 
 #### 散点图示例
 
@@ -125,7 +125,7 @@ R的源代码可自由下载使用，亦有已编译的可执行文件版本可�
 > plot(1:10, sqrt(1:10))
 ~~~
 
-![plot](http://7xsk2b.com1.z0.glb.clouddn.com/image/plot.png)
+![plot](http://img.iaquam.com/image/plot.png)
 
 ### 分析表格数据
 
@@ -161,6 +161,6 @@ Error in loadNamespace(name) : 不存在叫‘knitr’这个名字的程辑包
 |网上   |    4|   10|    1|
 ~~~
 
-> 示例中用到的csv文件，下载地址 [travel.csv](http://7xsk2b.com1.z0.glb.clouddn.com//file/travel.csv)
+> 示例中用到的csv文件，下载地址 [travel.csv](http://img.iaquam.com//file/travel.csv)
 
 [更多R语言教程](http://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/index.html)

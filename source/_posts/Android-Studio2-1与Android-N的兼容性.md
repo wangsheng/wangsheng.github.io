@@ -16,7 +16,7 @@ tags:
 
 `Android N requires the IDE to be running with Java 1.8 or later`。
 
-![AS-layout-preview1](http://7xsk2b.com1.z0.glb.clouddn.com/image/AS-layout-preview1.png)
+![AS-layout-preview1](http://img.iaquam.com/image/AS-layout-preview1.png)
 
 当我点击提示中的 `Install a supported JDK` 链接后，发现是让安装JDK8，但我现在还不想构建Android N版本，AS稳定渠道还没有放出AS 2.2版本的升级包。我只想看到布局预览图就行了，这怎么办呢？
 
@@ -24,6 +24,6 @@ tags:
 
 ## 处理方案
 
-![AS-layout-preview2.png](http://7xsk2b.com1.z0.glb.clouddn.com/image/AS-layout-preview2.png)
+![AS-layout-preview2.png](http://img.iaquam.com/image/AS-layout-preview2.png)
 
-![AS-layout-preview3.png](http://7xsk2b.com1.z0.glb.clouddn.com/image/AS-layout-preview3.png)
+![AS-layout-preview3.png](http://img.iaquam.com/image/AS-layout-preview3.png)

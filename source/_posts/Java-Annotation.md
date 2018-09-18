@@ -38,7 +38,7 @@ Runtime的处理主要依赖于反射的接口，在字节码中寻找Annotation
 
 ## 示例
 
-![custom-annotation-demo.png](http://7xsk2b.com1.z0.glb.clouddn.com/image/custom-annotation-demo.png)
+![custom-annotation-demo.png](http://img.iaquam.com/image/custom-annotation-demo.png)
 
 自定义一个@OnClick注解，通过在方法前面加入这个注解，从而为指定的组件动态添加事件监听方法。
 
