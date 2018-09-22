@@ -11,7 +11,7 @@ tags:
 半年前，我写了《[计算机是如何启动的？](http://victor87.coding.me/2017/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E5%A6%82%E4%BD%95%E5%90%AF%E5%8A%A8%E7%9A%84%EF%BC%9F/)》，探讨BIOS和主引导记录的作用。
 
 那篇文章不涉及操作系统，只与主板的板载程序有关。今天，我想接着往下写，探讨操作系统接管硬件以后发生的事情，也就是操作系统的启动流程。
-![boot-workflow](http://image.beekka.com/blog/201308/bg2013081701.png)
+![boot-workflow](http://www.ruanyifeng.com/blogimg/asset/201308/bg2013081701.png)
 这个部分比较有意思。因为在BIOS阶段，计算机的行为基本上被写死了，程序员可以做的事情并不多；但是，一旦进入操作系统，程序员几乎可以定制所有方面。所以，这个部分与程序员的关系更密切。
 
 我主要关心的是Linux操作系统，它是目前服务器端的主流操作系统。下面的内容针对的是[Debian](http://en.wikipedia.org/wiki/Debian)发行版，因为我对其他发行版不够熟悉。
@@ -19,7 +19,7 @@ tags:
 ## 第一步、加载内核
 
 操作系统接管硬件以后，首先读入 /boot 目录下的内核文件。
-![boot](http://image.beekka.com/blog/201308/bg2013081702.png)
+![boot](http://www.ruanyifeng.com/blogimg/asset/201308/bg2013081702.png)
 以我的电脑为例，/boot 目录下面大概是这样一些文件：
 
 ~~~Shell
@@ -39,7 +39,7 @@ vmlinuz-3.2.0-4-amd64
 ## 第二步、启动初始化进程
 
 内核文件加载以后，就开始运行第一个程序 /sbin/init，它的作用是初始化系统环境。
-![init](http://image.beekka.com/blog/201308/bg2013081703.png)
+![init](http://www.ruanyifeng.com/blogimg/asset/201308/bg2013081703.png)
 由于init是第一个运行的程序，它的进程编号（pid）就是1。其他所有进程都从它衍生，都是它的子进程。
 
 ## 第三步、确定运行级别
@@ -47,7 +47,7 @@ vmlinuz-3.2.0-4-amd64
 许多程序需要开机启动。它们在Windows叫做"服务"（service），在Linux就叫做"[守护进程](http://zh.wikipedia.org/wiki/%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B)"（daemon）。
 
 init进程的一大任务，就是去运行这些开机启动的程序。但是，不同的场合需要启动不同的程序，比如用作服务器时，需要启动Apache，用作桌面就不需要。Linux允许为不同的场合，分配不同的开机启动程序，这就叫做"运行级别"（runlevel）。也就是说，启动时根据"[运行级别](http://zh.wikipedia.org/wiki/%E8%BF%90%E8%A1%8C%E7%BA%A7%E5%88%AB)"，确定要运行哪些程序。
-![run-level](http://image.beekka.com/blog/201308/bg2013081704.png)
+![run-level](http://www.ruanyifeng.com/blogimg/asset/201308/bg2013081704.png)
 Linux预置七种运行级别（0-6）。一般来说，0是关机，1是单用户模式（也就是维护模式），6是重启。运行级别2-5，各个发行版不太一样，对于Debian来说，都是同样的多用户模式（也就是正常模式）。
 
 init进程首先读取文件 /etc/inittab，它是运行级别的设置文件。如果你打开它，可以看到第一行是这样的：
@@ -94,7 +94,7 @@ S18acpid
 前面提到，七种预设的"运行级别"各自有一个目录，存放需要开机启动的程序。不难想到，如果多个"运行级别"需要启动同一个程序，那么这个程序的启动脚本，就会在每一个目录里都有一个拷贝。这样会造成管理上的困扰：如果要修改启动脚本，岂不是每个目录都要改一遍？
 
 Linux的解决办法，就是七个 /etc/rcN.d 目录里列出的程序，都设为链接文件，指向另外一个目录 /etc/init.d ，真正的启动脚本都统一放在这个目录中。init进程逐一加载开机启动程序，其实就是运行这个目录里的启动脚本。
-![init.d](http://image.beekka.com/blog/201308/bg2013081705.png)
+![init.d](http://www.ruanyifeng.com/blogimg/asset/201308/bg2013081705.png)
 下面就是链接文件真正的指向。
 
 ~~~Shell
@@ -123,7 +123,7 @@ $ sudo /etc/init.d/apache2 restart
 ## 第五步、用户登录
 
 开机启动程序加载完毕以后，就要让用户登录了。
-![login](http://image.beekka.com/blog/201308/bg2013081706.png)
+![login](http://www.ruanyifeng.com/blogimg/asset/201308/bg2013081706.png)
 一般来说，用户的登录方式有三种：
 >（1）命令行登录
 >（2）ssh登录
@@ -138,7 +138,7 @@ $ sudo /etc/init.d/apache2 restart
 ## 第六步、进入 login shell
 
 所谓shell，简单说就是命令行界面，让用户可以直接与操作系统对话。用户登录时打开的shell，就叫做login shell。
-![login-shell](http://image.beekka.com/blog/201308/bg2013081707.png)
+![login-shell](http://www.ruanyifeng.com/blogimg/asset/201308/bg2013081707.png)
 Debian默认的shell是Bash，它会读入一系列的配置文件。上一步的三种情况，在这一步的处理，也存在差异。
 
 （1）命令行登录：首先读入 /etc/profile，这是对所有用户都有效的配置；然后依次寻找下面三个文件，这是针对当前用户的配置。
@@ -160,7 +160,7 @@ Debian默认的shell是Bash，它会读入一系列的配置文件。上一步�
 老实说，上一步完成以后，Linux的启动过程就算结束了，用户已经可以看到命令行提示符或者图形界面了。但是，为了内容的完整，必须再介绍一下这一步。
 
 用户进入操作系统以后，常常会再手动开启一个shell。这个shell就叫做 non-login shell，意思是它不同于登录时出现的那个shell，不读取/etc/profile和.profile等配置文件。
-![non-login shell](http://image.beekka.com/blog/201308/bg2013081708.png)
+![non-login shell](http://www.ruanyifeng.com/blogimg/asset/201308/bg2013081708.png)
 
 non-login shell的重要性，不仅在于它是用户最常接触的那个shell，还在于它会读入用户自己的bash配置文件 ~/.bashrc。大多数时候，我们对于bash的定制，都是写在这个文件里面的。
 
