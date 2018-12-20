@@ -117,6 +117,40 @@ yum install php70w-pecl-redis
 
 配置文件路径: `/etc/php.d/redis.ini`
 
+## Redis 持久化配置
+
+参见 [Redis持久化 Snapshot和AOF说明](https://www.cnblogs.com/zhoujinyi/archive/2013/05/26/3098508.html)
+
+## Redis 单机多实例部署
+
+参见 [Redis单机配置多实例，实现主从同步](https://www.cnblogs.com/lgeng/p/6623336.html)
+
+~~~diff
+$ diff /etc/redis.conf /etc/redis_6380.conf
+84c84
+< port 6379
+---
+> port 6380
+150c150
+< pidfile /var/run/redis_6379.pid
+---
+> pidfile /var/run/redis_6380.pid
+163c163
+< logfile /var/log/redis/redis.log
+---
+> logfile /var/log/redis/redis_6380.log
+237c237
+< dbfilename dump.rdb
+---
+> dbfilename dump_6380.rdb
+597c597
+< appendfilename "appendonly.aof"
+---
+> appendfilename "appendonly_6380.aof"
+1052a1053
+> :q
+~~~
+
 ## Yii中配置Redis
 
 (1). composer.json中添加`yii2-reds`中间件
