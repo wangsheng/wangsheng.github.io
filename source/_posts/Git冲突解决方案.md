@@ -27,7 +27,8 @@ tags:
 
 ### 方案一：merge
 
-如果branch_work2分支有多个人参与开发，那么采用此方法
+- 如果branch_work2分支有多个人参与开发，那么建议采用此方法
+- 如果当前分支含有多个提交，而且与dev分支长时间未合并同步代码，那么建议采用此方法
 
 ~~~Shell
 $ git pull origin dev // 前提是当前在branch_work2分支上
@@ -40,7 +41,7 @@ $ git push origin branch_work2 // 推到远程，用于Code Review和合并
 
 ### 方案二: rebase
 
-如果branch_work2分支只有你一个人参与开发，那么采用此方法
+如果branch_work2分支只有你一个人参与开发，那么建议采用此方法
 
 ~~~Shell
 $ git pull --rebase origin dev // 前提是当前在branch_work2分支上
