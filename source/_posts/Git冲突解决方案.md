@@ -32,9 +32,9 @@ tags:
 ~~~Shell
 $ git pull origin dev // 前提是当前在branch_work2分支上
 手动解决冲突...
-$ git add conflit_file
-$ gie merge --continue
-$ esc :wq 保存退出
+$ git add conflict_file // 将手动解决冲突的文件标为已解决。如果是多个文件，可分别add
+$ git commit // 提交修改
+$ esc :wq // 保存退出
 $ git push origin branch_work2 // 推到远程，用于Code Review和合并
 ~~~
 
@@ -45,8 +45,8 @@ $ git push origin branch_work2 // 推到远程，用于Code Review和合并
 ~~~Shell
 $ git pull --rebase origin dev // 前提是当前在branch_work2分支上
 手动解决冲突...
-$ git add conflit_file
-$ git rebase --continue
+$ git add conflict_file // 将手动解决冲突的文件标为已解决。如果是多个文件，可分别add
+$ git rebase --continue // 继续执行rebase
 $ git push -f origin branch_work2 // 强制推到远程，用于Code Review和合并
 ~~~
 
@@ -54,5 +54,5 @@ $ git push -f origin branch_work2 // 强制推到远程，用于Code Review和�
 
 - merge 方案不会改变历史，因此解决冲突后推送到远程时不需要加-f强制推送。但是提交历史会多一次合并提交。
   ![](http://img.iaquam.com/image/png/merge.png)
-- rebase 方案尽管让提交树看起来很线性，没有多产生一次合并提交。但是他改变了历史，因此解决冲突后需要加-f强制推送。也正是这个原因，当别人也参与_work2分支开发时，不应该选用此方案，避免给其他同事带来伤害。
+- rebase 方案尽管让提交树看起来很线性，没有多产生一次合并提交。但是他改变了历史，因此解决冲突后需要加-f强制推送。也正是这个原因，当别人也参与branch_work2分支开发时，不应该选用此方案，避免给其他同事带来伤害。
   ![](http://img.iaquam.com/image/png/rebase.png)
