@@ -12,7 +12,7 @@ tags:
 
 在传统的方式中，每次开发完代码后，由开发将代码转交给运维人员，然后由运维人员来将代码发布到Web服务器上，供用户访问使用。
 
-但是互联网讲究的是敏捷开发，所以要面临频繁的发版需求；再加上一般分为测试环境(test)、预发布环境(pre)和正式环境(pro)。这样一来，高频词发版 + 多环境发布使这种跨部门的传统发布模式与敏捷开发的思想格格不入。那么，有没有一种自动化的方案来完成这样重复无味的工作呢？
+但是互联网讲究的是敏捷开发，所以要面临频繁的发版需求；再加上一般分为测试环境(test)、预发布环境(pre)和正式环境(pro)。这样一来，高频次发版 + 多环境发布使这种跨部门的传统发布模式与敏捷开发的思想格格不入。那么，有没有一种自动化的方案来完成这样重复无味的工作呢？
 
 如果你们使用Git作为版本控制工具，且使用GitLab作为源码托管的话，那么就可以使用GitLab(8.0及以上版本)自带的CI拓展功能完成自动化构建和部署，即CI(Continuous Integration)/CD(Continuous Delivery)。
 
@@ -20,16 +20,16 @@ tags:
 
 ### GitLab-CI
 
-GitLab从8.0版本开始，推出了自动化集成和部署的解决方案：[Gitlab-CI](https://docs.gitlab.com/ce/ci/quick_start/README.html)，并且对素有项目默认开启。如果项目中需要自动化集成，那么只需要在项目仓库的根目录添加 `.gitlab-ci.yml`文件，指定执行构建的 [GitLab-Runner](https://docs.gitlab.com/ce/ci/runners/README.html) ，那么之后每一次合并请求(MR)或者推送代码(Push)都会触发CI的[任务流水线(Pipeline)](https://docs.gitlab.com/ce/ci/pipelines.html)。
+GitLab从8.0版本开始，推出了自动化集成和部署的解决方案：[Gitlab-CI](https://docs.gitlab.com/ce/ci/quick_start/README.html)，并且对现有项目默认开启。如果项目中需要自动化集成，那么只需要在项目仓库的根目录添加 `.gitlab-ci.yml`文件，指定执行构建的 [GitLab-Runner](https://docs.gitlab.com/ce/ci/runners/README.html) ，那么之后每一次合并请求(MR)或者推送代码(Push)都会触发CI的[任务流水线(Pipeline)](https://docs.gitlab.com/ce/ci/pipelines.html)。
 
 ### GitLab-Runner
 
-Gitlab-Runner 是具体执行构建和部署实际工作的执行器。Runner可以跟Gitlab安装台同一台机器上，但是考虑到Runner的资源消耗问题和安全性问题，官方不建议将Runner和Gitlab安装台一台物理机上。
+Gitlab-Runner 是具体执行构建和部署任务的执行器。Runner可以跟Gitlab安装台同一台机器上，但是考虑到Runner的资源消耗问题和安全性问题，官方不建议将Runner和Gitlab安装台一台物理机上。
 
 Runner又分为两种：
 
 - Shared Runners 可以运行开启了 `Allow shared runners` 选项的所有项目
-- Specific Runners 只运行指定的项目 
+- Specific Runners 只能运行指定的项目 
 
 ### 任务流水线 Pipelines
 
@@ -41,9 +41,9 @@ Pipelines是指不同阶段的一组任务。同一个阶段的任务可以并�
 
 ![](https://docs.gitlab.com/ce/ci/img/pipelines-goal.png)
 
-1. Branch Flow 例如基于dev、qa、staging、production的不同分支
-2. Trunk-based Flow 例如特性分支和单个master分支，可能带有发布tag
-3. Fork-based Flow 例如来自于forks的合并请求
+1. Branch Flow： 例如基于dev、qa、staging、production的不同分支
+2. Trunk-based Flow： 例如特性分支和单个master分支，可能带有发布tag
+3. Fork-based Flow： 例如来自于forks的合并请求
 
 ### 徽章 Badges
 
@@ -252,7 +252,7 @@ deploy_pro:
   ![](http://img.iaquam.com/image/png/gitlab-job-build1.png)
   ![](http://img.iaquam.com/image/png/gitlab-job-build2.png)
 - 测试任务执行详情
-  ![](http://img.iaquam.com/image/png/gitlab-job-build2.png)
+  ![](http://img.iaquam.com/image/png/gitlab-job-test.png)
 - 部署任务执行详情
   ![](http://img.iaquam.com/image/png/gitlab-job-deploy1.png)
   ![](http://img.iaquam.com/image/png/gitlab-job-deploy2.png)
