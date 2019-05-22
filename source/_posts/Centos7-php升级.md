@@ -7,7 +7,7 @@ tags:
 - PHP
 ---
 
-## 1. 检查当前安装的包
+## 1. 检查当前安装的PHP包
 
 ~~~Shell
 [root@VM_0_10_centos ~]# yum list installed | grep php
@@ -61,7 +61,7 @@ yum install php71w php71w-cli php71w-common php71w-devel php71w-embedded php71w-
 
 ## 5、如果安装了PHP的扩展库，可以通过pecl命令安装
 
-### 安装pecl
+### 5.1 安装pecl
 
 ~~~Shell
 # 如果php < 7
@@ -73,10 +73,27 @@ $ php go-pear.phar
 # 否则会报PHP syntax error, unexpected 'new' (T_NEW) in /usr/share/pear/PEAR/Frontend.php on line 91
 ~~~
 
-### 安装mongo扩展
+### 5.2 安装mongo扩展
 
 ~~~Shell
 $ pecl install mongodb
+~~~
+
+### 5.3 安装mosquitto扩展
+
+~~~Shell
+$ pecl install mosquitto -c channel://pecl.php.net/mosquitto-0.4.0
+~~~
+
+### 5.4 查看使用pecl安装的扩展有哪些
+
+~~~shell
+$ pecl list
+Installed packages, channel pecl.php.net:
+=========================================
+Package   Version State
+Mosquitto 0.4.0   beta
+mongodb   1.5.3   stable
 ~~~
 
 ## 6、如果服务器运行了PHP的web程序，需要重启php-fpm
