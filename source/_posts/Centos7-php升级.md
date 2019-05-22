@@ -56,7 +56,7 @@ rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 ## 4、安装PHP及相关插件，这里以PHP7.1.x为例
 
 ~~~Shell
-yum install php71w php71w-cli php71w-common php71w-devel php71w-embedded php71w-fpm php71w-gd php71w-mbstring php71w-mysqlnd php71w-opcache php71w-pdo php71w-xml php71w-ldap php71w-mcrypt
+yum install php71w php71w-cli php71w-common php71w-devel php71w-embedded php71w-fpm php71w-gd php71w-mbstring php71w-mysqlnd php71w-opcache php71w-pdo php71w-xml php71w-ldap php71w-mcrypt php71w-bcmath
 ~~~
 
 ## 5、如果安装了PHP的扩展库，可以通过pecl命令安装
@@ -68,7 +68,7 @@ yum install php71w php71w-cli php71w-common php71w-devel php71w-embedded php71w-
 $ yum install php-pear
 
 # 如果php >= 7
-$ wget [http://pear.php.net/go-pear.phar](http://pear.php.net/go-pear.phar)
+$ wget http://pear.php.net/go-pear.phar
 $ php go-pear.phar
 # 否则会报PHP syntax error, unexpected 'new' (T_NEW) in /usr/share/pear/PEAR/Frontend.php on line 91
 ~~~
