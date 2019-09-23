@@ -21,7 +21,7 @@ Gitlab提供了与外部问题跟踪系统整合的接口，可以通过项目�
 
 找到要整合的项目 -> Settings -> Services -> Redmine
 
-具体配置参考以下截图：[redmine与Gitlab集成](https://raw.githubusercontent.com/51offer/51offer.github.com/blog/source/images/gitlab_join_redmine.png)
+具体配置参考以下截图：[redmine与Gitlab集成](http://img.iaquam.com/image/jpg/gitlab_join_redmine.png)
 
 **注解**
 
